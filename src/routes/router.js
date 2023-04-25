@@ -6,6 +6,6 @@ const readDate = require('../controllers/ControllerForm')
 
 routs.get('/form', readForm.readForm);
 routs.post('/form', createForm.createForm);
-routs.get('/data', readDate.readDate);
+routs.get('/data ', readDate.readDate);
 
 module.exports = routs

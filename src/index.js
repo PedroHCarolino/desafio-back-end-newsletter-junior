@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT;
-const cors = require('cors');
+const cors = require('cors'); 
 const userRoutes = require('./routes/router');
 
 
@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
     );
-    next();
+    next(); 
   });
   
 app.use(express.json());
